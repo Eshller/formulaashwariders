@@ -14,6 +14,10 @@ import Home from './pages/Home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
+import Sponsors from './pages/Sponsors';
+import Achievements from './pages/Achievements';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
 function App() {
 
@@ -38,9 +42,13 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
+        {/* <Route path="/signin" element={<SignIn />} /> */}
+        {/* <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+        {/* <Route path="/reset-password" element={<ResetPassword />} /> */}
       </Routes>
     </>
   );
